@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RocaLog"
+version = "0.1.0"
+description = "Simple auth.log failed password parser"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "RocaLog" }
+]
+dependencies = []
+
+[tool.setuptools]
+packages = ["rocalog"]
