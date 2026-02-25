@@ -4,14 +4,19 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "RocaLog"
-version = "0.1.0"
-description = "Simple auth.log failed password parser"
+version = "0.2.0"
+description = "Auth.log parser and enterprise audit web application"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
   { name = "RocaLog" }
 ]
-dependencies = []
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn>=0.29",
+  "pyotp>=2.9",
+  "reportlab>=4.1"
+]
 
-[tool.setuptools]
-packages = ["rocalog"]
+[tool.setuptools.packages.find]
+include = ["rocalog*"]
